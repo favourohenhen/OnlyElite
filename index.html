@@ -1,408 +1,684 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OnlyElite — Quiet luxury boardroom armor for high-achieving women. What you wear speaks louder than your words."
+    />
+    <meta
+      name="keywords"
+      content="luxury fashion, women power suits, editorial fashion, quiet luxury, blazers, boardroom style"
+    />
+    <meta name="author" content="OnlyElite" />
+    <meta name="theme-color" content="#111111" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="OnlyElite — Quiet luxury boardroom armor for high-achieving women. What you wear speaks louder than your words." />
-  <meta name="keywords"
-    content="luxury fashion, women power suits, editorial fashion, quiet luxury, blazers, boardroom style" />
-  <meta name="author" content="OnlyElite" />
-  <meta name="theme-color" content="#111111" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="OnlyElite — Quiet Luxury for the Powerful"
+    />
+    <meta
+      property="og:description"
+      content="What you wear speaks louder than your words. Discover boardroom armor designed for high-achieving women."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://onlyelite.com" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="OnlyElite — Quiet Luxury for the Powerful" />
-  <meta property="og:description"
-    content="What you wear speaks louder than your words. Discover boardroom armor designed for high-achieving women." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://onlyelite.com" />
+    <title>OnlyElite — Quiet Luxury for the Powerful</title>
 
-  <title>OnlyElite — Quiet Luxury for the Powerful</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+    <!-- Tailwind CSS (built via CLI) + Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-  <!-- Tailwind CSS (built via CLI) + Custom Styles -->
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
+  <body class="bg-cream text-black font-sans antialiased overflow-x-hidden">
+    <!-- ========== NAVIGATION ========== -->
+    <div class="fixed top-5 left-1/2 -translate-x-1/2 z-50" id="nav-wrapper">
+      <nav
+        id="main-nav"
+        class="relative flex items-center overflow-hidden rounded-full border border-black/10 bg-cream/80 shadow-lg backdrop-blur-md h-12"
+      >
+        <!-- Logo -->
+        <a
+          href="#"
+          id="nav-logo"
+          class="nav-item flex-shrink-0 font-serif text-xl font-semibold tracking-wide pl-5 pr-3 text-black hover:text-gold transition-colors duration-300"
+        >
+          OnlyElite
+        </a>
 
-<body class="bg-cream text-black font-sans antialiased overflow-x-hidden">
+        <!-- Divider -->
+        <span class="nav-item w-px h-5 bg-black/10 flex-shrink-0"></span>
 
-  <!-- ========== NAVIGATION ========== -->
-  <div class="fixed top-5 left-1/2 -translate-x-1/2 z-50" id="nav-wrapper">
-    <nav id="main-nav"
-      class="relative flex items-center overflow-hidden rounded-full border border-black/10 bg-cream/80 shadow-lg backdrop-blur-md h-12">
+        <!-- Links -->
+        <div id="nav-links" class="nav-item flex items-center gap-1 sm:gap-2">
+          <a
+            href="#hero"
+            class="text-[11px] sm:text-xs font-medium text-muted hover:text-black transition-colors duration-300 px-2 sm:px-3 py-1 uppercase tracking-[0.15em]"
+            >Home</a
+          >
+          <a
+            href="#collection"
+            class="text-[11px] sm:text-xs font-medium text-muted hover:text-black transition-colors duration-300 px-2 sm:px-3 py-1 uppercase tracking-[0.15em]"
+            >Explore</a
+          >
+        </div>
 
-      <!-- Logo -->
-      <a href="#" id="nav-logo"
-        class="nav-item flex-shrink-0 font-serif text-xl font-semibold tracking-wide pl-5 pr-3 text-black hover:text-gold transition-colors duration-300">
-        OnlyElite
-      </a>
+        <!-- Bag Button -->
+        <button
+          id="nav-bag-btn"
+          class="nav-item flex-shrink-0 relative pl-2 pr-5 text-black hover:text-gold transition-colors duration-300"
+          aria-label="Shopping bag"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 01-8 0"></path>
+          </svg>
+          <span
+            id="bag-count"
+            class="absolute -top-1 -right-1 bg-burgundy text-cream text-[10px] font-semibold min-w-[18px] h-[18px] rounded-full flex items-center justify-center leading-none hidden"
+            >0</span
+          >
+        </button>
 
-      <!-- Divider -->
-      <span class="nav-item w-px h-5 bg-black/10 flex-shrink-0"></span>
-
-      <!-- Links -->
-      <div id="nav-links" class="nav-item flex items-center gap-1 sm:gap-2">
-        <a href="#hero"
-          class="text-[11px] sm:text-xs font-medium text-muted hover:text-black transition-colors duration-300 px-2 sm:px-3 py-1 uppercase tracking-[0.15em]">Home</a>
-        <a href="#collection"
-          class="text-[11px] sm:text-xs font-medium text-muted hover:text-black transition-colors duration-300 px-2 sm:px-3 py-1 uppercase tracking-[0.15em]">Explore</a>
-      </div>
-
-      <!-- Bag Button -->
-      <button id="nav-bag-btn"
-        class="nav-item flex-shrink-0 relative pl-2 pr-5 text-black hover:text-gold transition-colors duration-300"
-        aria-label="Shopping bag">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <path d="M16 10a4 4 0 01-8 0"></path>
-        </svg>
-        <span id="bag-count"
-          class="absolute -top-1 -right-1 bg-burgundy text-cream text-[10px] font-semibold min-w-[18px] h-[18px] rounded-full flex items-center justify-center leading-none hidden">0</span>
-      </button>
-
-      <!-- Collapsed Menu Icon (hidden when expanded) -->
-      <div id="nav-menu-icon" class="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="4" y1="8" x2="20" y2="8"></line>
-          <line x1="4" y1="16" x2="20" y2="16"></line>
-        </svg>
-      </div>
-
-    </nav>
-  </div>
-
-  <main>
-    <!-- ========== HERO ========== -->
-    <section id="hero"
-      class="relative w-full min-h-screen overflow-hidden bg-cream flex flex-col items-center justify-center text-center px-6">
-
-      <!-- Hero Content -->
-      <div class="z-10 flex flex-col items-center">
-
-        <!-- Tagline Pill -->
+        <!-- Collapsed Menu Icon (hidden when expanded) -->
         <div
-          class="hero-animate inline-block rounded-full border border-black/10 bg-cream/50 px-5 py-1.5 text-[10px] sm:text-xs font-medium text-muted uppercase tracking-[0.2em] backdrop-blur-sm mb-6"
-          style="animation-delay: 0.15s">
-          Quiet Luxury Redefined
+          id="nav-menu-icon"
+          class="absolute inset-0 flex items-center justify-center pointer-events-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" y1="8" x2="20" y2="8"></line>
+            <line x1="4" y1="16" x2="20" y2="16"></line>
+          </svg>
         </div>
+      </nav>
+    </div>
 
-        <!-- Main Title -->
-        <h1
-          class="font-serif text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-black leading-[0.95]">
-          <span class="hero-word" style="animation-delay: 0.3s">What</span>
-          <span class="hero-word" style="animation-delay: 0.4s">You</span>
-          <span class="hero-word" style="animation-delay: 0.5s">Wear</span>
-          <br class="hidden sm:block" />
-          <span class="hero-word" style="animation-delay: 0.65s">Speaks</span>
-          <span class="hero-word italic text-gold" style="animation-delay: 0.8s">Louder</span>
-        </h1>
+    <main>
+      <!-- ========== HERO ========== -->
+      <section
+        id="hero"
+        class="relative w-full min-h-screen overflow-hidden bg-cream flex flex-col items-center justify-center text-center px-6"
+      >
+        <!-- Hero Content -->
+        <div class="z-10 flex flex-col items-center">
+          <!-- Tagline Pill -->
+          <div
+            class="hero-animate inline-block rounded-full border border-black/10 bg-cream/50 px-5 py-1.5 text-[10px] sm:text-xs font-medium text-muted uppercase tracking-[0.2em] backdrop-blur-sm mb-6"
+            style="animation-delay: 0.15s"
+          >
+            Quiet Luxury Redefined
+          </div>
 
-        <!-- Description -->
-        <p class="hero-animate mt-6 max-w-lg text-sm sm:text-base text-muted leading-relaxed px-2"
-          style="animation-delay: 0.9s">
-          Boardroom armor for founders, creative directors, and every woman who leads without permission. Tailored
-          power, quiet confidence.
-        </p>
+          <!-- Main Title -->
+          <h1
+            class="font-serif text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-black leading-[0.95]"
+          >
+            <span class="hero-word" style="animation-delay: 0.3s">What</span>
+            <span class="hero-word" style="animation-delay: 0.4s">You</span>
+            <span class="hero-word" style="animation-delay: 0.5s">Wear</span>
+            <br class="hidden sm:block" />
+            <span class="hero-word" style="animation-delay: 0.65s">Speaks</span>
+            <span
+              class="hero-word italic text-gold"
+              style="animation-delay: 0.8s"
+              >Louder</span
+            >
+          </h1>
 
-        <!-- CTA Button — transparent outline per brand guidelines -->
-        <div class="hero-animate" style="animation-delay: 1.1s">
-          <a href="#collection"
-            class="mt-8 inline-block px-10 py-3.5 border border-black text-black text-[11px] uppercase tracking-[0.25em] font-medium hover:bg-black hover:text-cream transition-all duration-500">
-            Explore the Collection
-          </a>
-        </div>
-      </div>
-
-      <!-- Animated Image Marquee -->
-      <div class="absolute bottom-0 left-0 w-full h-[30%] md:h-[38%] hero-marquee-mask pointer-events-none">
-        <div id="hero-marquee" class="flex gap-4 items-end pb-4">
-          <!-- Images populated by JS -->
-        </div>
-      </div>
-
-    </section>
-
-    <!-- ========== ABOUT / BRAND MANIFESTO ========== -->
-    <section id="about" class="relative w-full bg-cream overflow-hidden py-24 sm:py-32 px-6 md:px-12 lg:px-20">
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-14 md:gap-16">
-
-        <!-- Text Side -->
-        <div class="w-full md:w-[42%] space-y-6">
-          <!-- Gold accent line -->
-          <div class="w-12 h-px bg-gold"></div>
-
-          <p class="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-muted font-medium">Our Philosophy</p>
-
-          <h2
-            class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-black leading-[1.05] tracking-tight">
-            Elite is a
-            <br />
-            <span class="italic text-gold">presence,</span>
-            <br />
-            not a job title.
-          </h2>
-
-          <p class="text-muted text-sm sm:text-base leading-relaxed max-w-md">
-            We don't dress women for the boardroom. We arm them. OnlyElite exists for the woman who walks into a room
-            and shifts the energy — whether she's closing a deal, directing a campaign, or building an empire from her
-            kitchen table.
+          <!-- Description -->
+          <p
+            class="hero-animate mt-6 max-w-lg text-sm sm:text-base text-muted leading-relaxed px-2"
+            style="animation-delay: 0.9s"
+          >
+            Boardroom armor for founders, creative directors, and every woman
+            who leads without permission. Tailored power, quiet confidence.
           </p>
 
-          <p class="text-muted text-sm sm:text-base leading-relaxed max-w-md">
-            Every piece is engineered to be felt before seen. Structure without stiffness. Luxury without logos. Power
-            without performance.
-          </p>
-
-          <!-- Signature accent -->
-          <div class="pt-4">
-            <div class="w-8 h-px bg-burgundy"></div>
-            <p class="mt-3 font-serif italic text-sm text-black/60">— The OnlyElite Standard</p>
+          <!-- CTA Button — transparent outline per brand guidelines -->
+          <div class="hero-animate" style="animation-delay: 1.1s">
+            <a
+              href="#collection"
+              class="mt-8 inline-block px-10 py-3.5 border border-black text-black text-[11px] uppercase tracking-[0.25em] font-medium hover:bg-black hover:text-cream transition-all duration-500"
+            >
+              Explore the Collection
+            </a>
           </div>
         </div>
 
-        <!-- Carousel Side -->
-        <div class="w-full md:w-[58%] relative h-[360px] sm:h-[400px] md:h-[460px]">
-          <div id="about-carousel" class="relative w-full h-full flex items-center justify-center"
-            style="perspective: 1000px;">
-            <!-- Cards populated by JS -->
+        <!-- Animated Image Marquee -->
+        <div
+          class="absolute bottom-0 left-0 w-full h-[30%] md:h-[38%] hero-marquee-mask pointer-events-none"
+        >
+          <div id="hero-marquee" class="flex gap-4 items-end pb-4">
+            <!-- Images populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT / BRAND MANIFESTO ========== -->
+      <section
+        id="about"
+        class="relative w-full bg-cream overflow-hidden py-24 sm:py-32 px-6 md:px-12 lg:px-20"
+      >
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-14 md:gap-16"
+        >
+          <!-- Text Side -->
+          <div class="w-full md:w-[42%] space-y-6">
+            <!-- Gold accent line -->
+            <div class="w-12 h-px bg-gold"></div>
+
+            <p
+              class="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-muted font-medium"
+            >
+              Our Philosophy
+            </p>
+
+            <h2
+              class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-black leading-[1.05] tracking-tight"
+            >
+              Elite is a
+              <br />
+              <span class="italic text-gold">presence,</span>
+              <br />
+              not a job title.
+            </h2>
+
+            <p class="text-muted text-sm sm:text-base leading-relaxed max-w-md">
+              We don't dress women for the boardroom. We arm them. OnlyElite
+              exists for the woman who walks into a room and shifts the energy —
+              whether she's closing a deal, directing a campaign, or building an
+              empire from her kitchen table.
+            </p>
+
+            <p class="text-muted text-sm sm:text-base leading-relaxed max-w-md">
+              Every piece is engineered to be felt before seen. Structure
+              without stiffness. Luxury without logos. Power without
+              performance.
+            </p>
+
+            <!-- Signature accent -->
+            <div class="pt-4">
+              <div class="w-8 h-px bg-burgundy"></div>
+              <p class="mt-3 font-serif italic text-sm text-black/60">
+                — The OnlyElite Standard
+              </p>
+            </div>
           </div>
 
-          <!-- Prev Button -->
-          <button id="about-prev"
-            class="absolute left-0 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 border border-black/10 bg-cream/60 backdrop-blur-sm flex items-center justify-center hover:bg-black hover:text-cream transition-all duration-300"
-            aria-label="Previous image">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-          </button>
+          <!-- Carousel Side -->
+          <div
+            class="w-full md:w-[58%] relative h-[360px] sm:h-[400px] md:h-[460px]"
+          >
+            <div
+              id="about-carousel"
+              class="relative w-full h-full flex items-center justify-center"
+              style="perspective: 1000px"
+            >
+              <!-- Cards populated by JS -->
+            </div>
 
-          <!-- Next Button -->
-          <button id="about-next"
-            class="absolute right-0 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 border border-black/10 bg-cream/60 backdrop-blur-sm flex items-center justify-center hover:bg-black hover:text-cream transition-all duration-300"
-            aria-label="Next image">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
-          </button>
+            <!-- Prev Button -->
+            <button
+              id="about-prev"
+              class="absolute left-0 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 border border-black/10 bg-cream/60 backdrop-blur-sm flex items-center justify-center hover:bg-black hover:text-cream transition-all duration-300"
+              aria-label="Previous image"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+
+            <!-- Next Button -->
+            <button
+              id="about-next"
+              class="absolute right-0 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 border border-black/10 bg-cream/60 backdrop-blur-sm flex items-center justify-center hover:bg-black hover:text-cream transition-all duration-300"
+              aria-label="Next image"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== MARQUEE TICKER ========== -->
+      <section
+        id="ticker"
+        class="w-full bg-black py-3 sm:py-4 overflow-hidden select-none"
+        aria-hidden="true"
+      >
+        <!-- Row 1 — scrolls left -->
+        <div class="marquee-track mb-2 sm:mb-3">
+          <div class="marquee-scroll marquee-left">
+            <span class="marquee-content">
+              <span>Power</span><span class="marquee-dot">◆</span>
+              <span>Tailored</span><span class="marquee-dot">◆</span>
+              <span>Elite</span><span class="marquee-dot">◆</span>
+              <span>Luxury</span><span class="marquee-dot">◆</span>
+              <span>Minimal</span><span class="marquee-dot">◆</span>
+              <span>Boardroom</span><span class="marquee-dot">◆</span>
+              <span>Confidence</span><span class="marquee-dot">◆</span>
+              <span>Armor</span><span class="marquee-dot">◆</span>
+              <span>Presence</span><span class="marquee-dot">◆</span>
+              <span>Unapologetic</span><span class="marquee-dot">◆</span>
+            </span>
+            <span class="marquee-content" aria-hidden="true">
+              <span>Power</span><span class="marquee-dot">◆</span>
+              <span>Tailored</span><span class="marquee-dot">◆</span>
+              <span>Elite</span><span class="marquee-dot">◆</span>
+              <span>Luxury</span><span class="marquee-dot">◆</span>
+              <span>Minimal</span><span class="marquee-dot">◆</span>
+              <span>Boardroom</span><span class="marquee-dot">◆</span>
+              <span>Confidence</span><span class="marquee-dot">◆</span>
+              <span>Armor</span><span class="marquee-dot">◆</span>
+              <span>Presence</span><span class="marquee-dot">◆</span>
+              <span>Unapologetic</span><span class="marquee-dot">◆</span>
+            </span>
+          </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- ========== MARQUEE TICKER ========== -->
-    <section id="ticker" class="w-full bg-black py-3 sm:py-4 overflow-hidden select-none" aria-hidden="true">
-
-      <!-- Row 1 — scrolls left -->
-      <div class="marquee-track mb-2 sm:mb-3">
-        <div class="marquee-scroll marquee-left">
-          <span class="marquee-content">
-            <span>Power</span><span class="marquee-dot">◆</span>
-            <span>Tailored</span><span class="marquee-dot">◆</span>
-            <span>Elite</span><span class="marquee-dot">◆</span>
-            <span>Luxury</span><span class="marquee-dot">◆</span>
-            <span>Minimal</span><span class="marquee-dot">◆</span>
-            <span>Boardroom</span><span class="marquee-dot">◆</span>
-            <span>Confidence</span><span class="marquee-dot">◆</span>
-            <span>Armor</span><span class="marquee-dot">◆</span>
-            <span>Presence</span><span class="marquee-dot">◆</span>
-            <span>Unapologetic</span><span class="marquee-dot">◆</span>
-          </span>
-          <span class="marquee-content" aria-hidden="true">
-            <span>Power</span><span class="marquee-dot">◆</span>
-            <span>Tailored</span><span class="marquee-dot">◆</span>
-            <span>Elite</span><span class="marquee-dot">◆</span>
-            <span>Luxury</span><span class="marquee-dot">◆</span>
-            <span>Minimal</span><span class="marquee-dot">◆</span>
-            <span>Boardroom</span><span class="marquee-dot">◆</span>
-            <span>Confidence</span><span class="marquee-dot">◆</span>
-            <span>Armor</span><span class="marquee-dot">◆</span>
-            <span>Presence</span><span class="marquee-dot">◆</span>
-            <span>Unapologetic</span><span class="marquee-dot">◆</span>
-          </span>
+        <!-- Row 2 — scrolls right -->
+        <div class="marquee-track">
+          <div class="marquee-scroll marquee-right">
+            <span class="marquee-content">
+              <span>Structure</span><span class="marquee-dot">◆</span>
+              <span>Authority</span><span class="marquee-dot">◆</span>
+              <span>Sharp</span><span class="marquee-dot">◆</span>
+              <span>Refined</span><span class="marquee-dot">◆</span>
+              <span>Commanding</span><span class="marquee-dot">◆</span>
+              <span>Heritage</span><span class="marquee-dot">◆</span>
+              <span>Silhouette</span><span class="marquee-dot">◆</span>
+              <span>Legacy</span><span class="marquee-dot">◆</span>
+              <span>Sovereign</span><span class="marquee-dot">◆</span>
+              <span>Formidable</span><span class="marquee-dot">◆</span>
+            </span>
+            <span class="marquee-content" aria-hidden="true">
+              <span>Structure</span><span class="marquee-dot">◆</span>
+              <span>Authority</span><span class="marquee-dot">◆</span>
+              <span>Sharp</span><span class="marquee-dot">◆</span>
+              <span>Refined</span><span class="marquee-dot">◆</span>
+              <span>Commanding</span><span class="marquee-dot">◆</span>
+              <span>Heritage</span><span class="marquee-dot">◆</span>
+              <span>Silhouette</span><span class="marquee-dot">◆</span>
+              <span>Legacy</span><span class="marquee-dot">◆</span>
+              <span>Sovereign</span><span class="marquee-dot">◆</span>
+              <span>Formidable</span><span class="marquee-dot">◆</span>
+            </span>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Row 2 — scrolls right -->
-      <div class="marquee-track">
-        <div class="marquee-scroll marquee-right">
-          <span class="marquee-content">
-            <span>Structure</span><span class="marquee-dot">◆</span>
-            <span>Authority</span><span class="marquee-dot">◆</span>
-            <span>Sharp</span><span class="marquee-dot">◆</span>
-            <span>Refined</span><span class="marquee-dot">◆</span>
-            <span>Commanding</span><span class="marquee-dot">◆</span>
-            <span>Heritage</span><span class="marquee-dot">◆</span>
-            <span>Silhouette</span><span class="marquee-dot">◆</span>
-            <span>Legacy</span><span class="marquee-dot">◆</span>
-            <span>Sovereign</span><span class="marquee-dot">◆</span>
-            <span>Formidable</span><span class="marquee-dot">◆</span>
-          </span>
-          <span class="marquee-content" aria-hidden="true">
-            <span>Structure</span><span class="marquee-dot">◆</span>
-            <span>Authority</span><span class="marquee-dot">◆</span>
-            <span>Sharp</span><span class="marquee-dot">◆</span>
-            <span>Refined</span><span class="marquee-dot">◆</span>
-            <span>Commanding</span><span class="marquee-dot">◆</span>
-            <span>Heritage</span><span class="marquee-dot">◆</span>
-            <span>Silhouette</span><span class="marquee-dot">◆</span>
-            <span>Legacy</span><span class="marquee-dot">◆</span>
-            <span>Sovereign</span><span class="marquee-dot">◆</span>
-            <span>Formidable</span><span class="marquee-dot">◆</span>
-          </span>
+      <!-- ========== CORE COLLECTION ========== -->
+      <section
+        id="collection"
+        class="w-full bg-cream py-20 sm:py-28 px-6 md:px-12 lg:px-20"
+      >
+        <div class="max-w-7xl mx-auto">
+          <!-- Header -->
+          <div class="text-center mb-10">
+            <div class="w-12 h-px bg-gold mx-auto mb-4"></div>
+            <h2
+              class="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-black"
+            >
+              The Core Collection
+            </h2>
+            <p class="mt-3 text-muted text-xs sm:text-sm">
+              Curated essentials for the powerful wardrobe.
+            </p>
+          </div>
+
+          <!-- Category Tabs -->
+          <div
+            class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10"
+            id="category-tabs"
+          >
+            <button class="cat-tab active" data-category="all">All</button>
+            <button class="cat-tab" data-category="tops">
+              Tops &amp; Shirts
+            </button>
+            <button class="cat-tab" data-category="dresses">
+              Dresses &amp; Jumpsuits
+            </button>
+            <button class="cat-tab" data-category="pants">Pants</button>
+            <button class="cat-tab" data-category="coats">
+              Coats &amp; Jackets
+            </button>
+            <button class="cat-tab" data-category="blazers">Blazers</button>
+            <button class="cat-tab" data-category="sweaters">Sweaters</button>
+            <button class="cat-tab" data-category="suits">Suits</button>
+          </div>
+
+          <!-- Product Grid (rendered by JS) -->
+          <div
+            id="collection-grid"
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-10"
+          ></div>
         </div>
-      </div>
+      </section>
+    </main>
 
-    </section>
-
-    <!-- ========== CORE COLLECTION ========== -->
-    <section id="collection" class="w-full bg-cream py-20 sm:py-28 px-6 md:px-12 lg:px-20">
+    <!-- ========== FOOTER ========== -->
+    <footer
+      class="w-full bg-black text-cream/70 pt-20 pb-8 px-6 md:px-12 lg:px-20"
+    >
       <div class="max-w-7xl mx-auto">
+        <!-- Top: Logo + Links -->
+        <div
+          class="flex w-full flex-col justify-between gap-12 lg:flex-row lg:items-start"
+        >
+          <!-- Left — Brand Info -->
+          <div class="flex flex-col gap-5 lg:max-w-xs">
+            <a
+              href="#"
+              class="font-serif text-2xl font-semibold text-cream tracking-wide"
+              >OnlyElite</a
+            >
+            <p class="text-xs sm:text-sm leading-relaxed text-cream/50">
+              What you wear speaks louder than your words. Quiet luxury
+              boardroom armor for high-achieving women.
+            </p>
+            <!-- Social Icons -->
+            <ul class="flex items-center gap-5 pt-1">
+              <!-- Instagram -->
+              <li>
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  class="text-cream/40 hover:text-gold transition-colors duration-300"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+              </li>
+              <!-- Facebook -->
+              <li>
+                <a
+                  href="#"
+                  aria-label="Facebook"
+                  class="text-cream/40 hover:text-gold transition-colors duration-300"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <!-- X / Twitter -->
+              <li>
+                <a
+                  href="#"
+                  aria-label="X"
+                  class="text-cream/40 hover:text-gold transition-colors duration-300"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 4l11.733 16h4.267l-11.733-16z" />
+                    <path d="M4 20l6.768-6.768M20 4l-6.768 6.768" />
+                  </svg>
+                </a>
+              </li>
+              <!-- LinkedIn -->
+              <li>
+                <a
+                  href="#"
+                  aria-label="LinkedIn"
+                  class="text-cream/40 hover:text-gold transition-colors duration-300"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"
+                    />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <!-- Header -->
-        <div class="text-center mb-10">
-          <div class="w-12 h-px bg-gold mx-auto mb-4"></div>
-          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-black">The Core Collection</h2>
-          <p class="mt-3 text-muted text-xs sm:text-sm">Curated essentials for the powerful wardrobe.</p>
+          <!-- Right — Link Columns -->
+          <div
+            class="grid w-full grid-cols-2 gap-8 sm:grid-cols-3 lg:max-w-lg lg:gap-14"
+          >
+            <!-- Shop -->
+            <div>
+              <h3
+                class="text-xs uppercase tracking-[0.2em] text-cream font-medium mb-4"
+              >
+                Shop
+              </h3>
+              <ul class="space-y-2.5 text-xs">
+                <li>
+                  <a
+                    href="#collection"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Blazers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#collection"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Suits</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#collection"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Tops & Shirts</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#collection"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Dresses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#collection"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Coats</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Company -->
+            <div>
+              <h3
+                class="text-xs uppercase tracking-[0.2em] text-cream font-medium mb-4"
+              >
+                Company
+              </h3>
+              <ul class="space-y-2.5 text-xs">
+                <li>
+                  <a
+                    href="#about"
+                    class="hover:text-gold transition-colors duration-300"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Press</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Lookbook</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Support -->
+            <div>
+              <h3
+                class="text-xs uppercase tracking-[0.2em] text-cream font-medium mb-4"
+              >
+                Support
+              </h3>
+              <ul class="space-y-2.5 text-xs">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Shipping</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-gold transition-colors duration-300"
+                    >Returns</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-gold transition-colors duration-300"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <!-- Category Tabs -->
-        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10" id="category-tabs">
-          <button class="cat-tab active" data-category="all">All</button>
-          <button class="cat-tab" data-category="tops">Tops &amp; Shirts</button>
-          <button class="cat-tab" data-category="dresses">Dresses &amp; Jumpsuits</button>
-          <button class="cat-tab" data-category="pants">Pants</button>
-          <button class="cat-tab" data-category="coats">Coats &amp; Jackets</button>
-          <button class="cat-tab" data-category="blazers">Blazers</button>
-          <button class="cat-tab" data-category="sweaters">Sweaters</button>
-          <button class="cat-tab" data-category="suits">Suits</button>
-        </div>
-
-        <!-- Product Grid (rendered by JS) -->
-        <div id="collection-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-10">
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="w-full bg-black text-cream/70 pt-20 pb-8 px-6 md:px-12 lg:px-20">
-    <div class="max-w-7xl mx-auto">
-
-      <!-- Top: Logo + Links -->
-      <div class="flex w-full flex-col justify-between gap-12 lg:flex-row lg:items-start">
-
-        <!-- Left — Brand Info -->
-        <div class="flex flex-col gap-5 lg:max-w-xs">
-          <a href="#" class="font-serif text-2xl font-semibold text-cream tracking-wide">OnlyElite</a>
-          <p class="text-xs sm:text-sm leading-relaxed text-cream/50">
-            What you wear speaks louder than your words. Quiet luxury boardroom armor for high-achieving women.
-          </p>
-          <!-- Social Icons -->
-          <ul class="flex items-center gap-5 pt-1">
-            <!-- Instagram -->
-            <li><a href="#" aria-label="Instagram" class="text-cream/40 hover:text-gold transition-colors duration-300">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" />
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-              </a></li>
-            <!-- Facebook -->
-            <li><a href="#" aria-label="Facebook" class="text-cream/40 hover:text-gold transition-colors duration-300">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-                </svg>
-              </a></li>
-            <!-- X / Twitter -->
-            <li><a href="#" aria-label="X" class="text-cream/40 hover:text-gold transition-colors duration-300">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 4l11.733 16h4.267l-11.733-16z" />
-                  <path d="M4 20l6.768-6.768M20 4l-6.768 6.768" />
-                </svg>
-              </a></li>
-            <!-- LinkedIn -->
-            <li><a href="#" aria-label="LinkedIn" class="text-cream/40 hover:text-gold transition-colors duration-300">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
-                  <rect x="2" y="9" width="4" height="12" />
-                  <circle cx="4" cy="4" r="2" />
-                </svg>
-              </a></li>
+        <!-- Bottom Bar -->
+        <div
+          class="mt-14 flex flex-col sm:flex-row justify-between items-center gap-4 border-t border-cream/10 pt-6 text-[10px] sm:text-xs text-cream/30"
+        >
+          <p>&copy; 2026 OnlyElite. All rights reserved.</p>
+          <p>Built by DevFavour</p>
+          <ul class="flex gap-4 sm:gap-6">
+            <li>
+              <a href="#" class="hover:text-cream/60 transition-colors"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-cream/60 transition-colors"
+                >Privacy Policy</a
+              >
+            </li>
           </ul>
         </div>
-
-        <!-- Right — Link Columns -->
-        <div class="grid w-full grid-cols-2 gap-8 sm:grid-cols-3 lg:max-w-lg lg:gap-14">
-          <!-- Shop -->
-          <div>
-            <h3 class="text-xs uppercase tracking-[0.2em] text-cream font-medium mb-4">Shop</h3>
-            <ul class="space-y-2.5 text-xs">
-              <li><a href="#collection" class="hover:text-gold transition-colors duration-300">Blazers</a></li>
-              <li><a href="#collection" class="hover:text-gold transition-colors duration-300">Suits</a></li>
-              <li><a href="#collection" class="hover:text-gold transition-colors duration-300">Tops & Shirts</a></li>
-              <li><a href="#collection" class="hover:text-gold transition-colors duration-300">Dresses</a></li>
-              <li><a href="#collection" class="hover:text-gold transition-colors duration-300">Coats</a></li>
-            </ul>
-          </div>
-          <!-- Company -->
-          <div>
-            <h3 class="text-xs uppercase tracking-[0.2em] text-cream font-medium mb-4">Company</h3>
-            <ul class="space-y-2.5 text-xs">
-              <li><a href="#about" class="hover:text-gold transition-colors duration-300">About Us</a></li>
-              <li><a href="#" class="hover:text-gold transition-colors duration-300">Careers</a></li>
-              <li><a href="#" class="hover:text-gold transition-colors duration-300">Press</a></li>
-              <li><a href="#" class="hover:text-gold transition-colors duration-300">Lookbook</a></li>
-            </ul>
-          </div>
-          <!-- Support -->
-          <div>
-            <h3 class="text-xs uppercase tracking-[0.2em] text-cream font-medium mb-4">Support</h3>
-            <ul class="space-y-2.5 text-xs">
-              <li><a href="#" class="hover:text-gold transition-colors duration-300">Contact</a></li>
-              <li><a href="#" class="hover:text-gold transition-colors duration-300">Shipping</a></li>
-              <li><a href="#" class="hover:text-gold transition-colors duration-300">Returns</a></li>
-              <li><a href="#" class="hover:text-gold transition-colors duration-300">FAQ</a></li>
-            </ul>
-          </div>
-        </div>
-
       </div>
+    </footer>
 
-      <!-- Bottom Bar -->
-      <div
-        class="mt-14 flex flex-col sm:flex-row justify-between items-center gap-4 border-t border-cream/10 pt-6 text-[10px] sm:text-xs text-cream/30">
-        <p>&copy; 2026 OnlyElite. All rights reserved.</p>
-        <ul class="flex gap-4 sm:gap-6">
-          <li><a href="#" class="hover:text-cream/60 transition-colors">Terms & Conditions</a></li>
-          <li><a href="#" class="hover:text-cream/60 transition-colors">Privacy Policy</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="js/unsplash.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/bag.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script src="js/unsplash.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/bag.js"></script>
+  </body>
 </html>
