@@ -16,6 +16,17 @@
   --font-sans: 'Poppins', system-ui, sans-serif;
 }
 
+/* ---------- Smooth Scroll ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+
 /* ---------- Base Resets ---------- */
 *,
 *::before,

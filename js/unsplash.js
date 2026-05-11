@@ -18,7 +18,7 @@ const UnsplashAPI = (() => {
 
     // ---- About Carousel / Workweek ----
     monday: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80&fit=crop',
-    tuesday: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=800&q=80&fit=crop',
+    tuesday: 'https://images.unsplash.com/photo-1758599543125-0a927f1d7a3b?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     wednesday: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&q=80&fit=crop',
     thursday: 'https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=800&q=80&fit=crop',
     friday: 'https://images.unsplash.com/photo-1573497019236-17f8177b81e8?w=800&q=80&fit=crop',
@@ -27,7 +27,7 @@ const UnsplashAPI = (() => {
     tops: 'https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?w=600&q=80&fit=crop',
     dresses: 'https://images.unsplash.com/photo-1727782908845-9d9216c49123?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     pants: 'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    coats: 'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=600&q=80&fit=crop',
+    coats: 'https://images.unsplash.com/photo-1682610730139-186454c426cf?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     blazers: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=600&q=80&fit=crop',
     sweaters: 'https://images.unsplash.com/photo-1631541909061-71e349d1f203?q=80&w=705&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     suits: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80&fit=crop',
