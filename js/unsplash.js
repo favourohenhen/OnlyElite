@@ -58,15 +58,15 @@ const UnsplashAPI = (() => {
     // Woman in silk blouse
     tops: 'https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?w=600&q=80&fit=crop',
     // Woman in professional midi dress
-    dresses: 'https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=600&q=80&fit=crop',
+    dresses: 'https://images.unsplash.com/photo-1727782908845-9d9216c49123?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     // Woman in tailored trousers
-    pants: 'https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=600&q=80&fit=crop',
+    pants: 'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     // Woman in professional coat
     coats: 'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=600&q=80&fit=crop',
     // Woman in structured blazer
     blazers: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=600&q=80&fit=crop',
     // Woman in elegant sweater
-    sweaters: 'https://images.unsplash.com/photo-1583846783214-2229e0249c83?w=600&q=80&fit=crop',
+    sweaters: 'https://images.unsplash.com/photo-1631541909061-71e349d1f203?q=80&w=705&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     // Woman in power suit
     suits: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80&fit=crop',
     // Generic: professional woman in corporate clothing
