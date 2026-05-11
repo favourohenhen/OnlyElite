@@ -77,58 +77,6 @@ npx tailwindcss -i ./css/input.css -o ./css/styles.css --watch
 
 Then open `index.html` in your browser.
 
----
-
-## 🖼 Changing Images
-
-All images are managed in **`js/unsplash.js`** — a simple key-value map:
-
-```js
-const IMAGES = {
-  hero: 'https://images.unsplash.com/photo-...',
-  blazers: 'https://images.unsplash.com/photo-...',
-  suits: 'https://images.unsplash.com/photo-...',
-  // ... swap any URL to change images site-wide
-};
-```
-
-### Product color variants
-
-In `js/app.js`, each product's `colors` array references image keys:
-
-```js
-colors: [
-  { n: 'Ivory', h: '#FDFBF7', k: 'tops' },      // ← default image
-  { n: 'Charcoal', h: '#333', k: 'monday' },      // ← swatch 2 image
-]
-```
-
-Add new keys to `IMAGES` in `unsplash.js` for additional color variants.
-
----
-
-## 🎨 Brand Colors
-
-| Color | Hex | Usage |
-|---|---|---|
-| Black | `#111111` | Primary text, backgrounds |
-| Cream | `#FDFBF7` | Page background |
-| Gold | `#D4AF37` | Accents, highlights |
-| Burgundy | `#58111A` | CTA states, bag badge |
-| Muted | `#666666` | Secondary text |
-
----
-
-## 📦 Deployment
-
-This is a static site — no server required. Deploy to:
-
-- **Netlify** — Drag and drop the folder
-- **Vercel** — Connect your Git repo
-- **GitHub Pages** — Push and enable Pages
-- **Any static host** — Upload all files
-
----
 
 ## 📄 License
 
