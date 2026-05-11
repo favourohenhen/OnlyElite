@@ -1,0 +1,338 @@
+/* ================================================
+   OnlyElite — Tailwind Input
+   This file is processed by Tailwind CLI to generate
+   the production CSS.
+   ================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- CSS Custom Properties ---------- */
+:root {
+  --color-black: #111111;
+  --color-cream: #FDFBF7;
+  --color-gold: #D4AF37;
+  --color-burgundy: #58111A;
+  --color-muted: #666666;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+}
+
+/* ---------- Smooth Scroll ---------- */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+
+/* ---------- Base Resets ---------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- Scrollbar (Webkit) ---------- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-black);
+}
+
+/* ---------- Utility: Transition Base ---------- */
+.transition-base {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ---------- Animations ---------- */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+/* ---------- Navigation ---------- */
+
+@keyframes navSlideIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(-80px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+#nav-wrapper {
+  animation: navSlideIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation-delay: 0.15s;
+}
+
+#main-nav {
+  transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease;
+}
+
+#main-nav .nav-item {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+#main-nav .nav-item:nth-child(1) { transition-delay: 0.08s; }
+#main-nav .nav-item:nth-child(2) { transition-delay: 0.06s; }
+#main-nav .nav-item:nth-child(3) { transition-delay: 0.04s; }
+#main-nav .nav-item:nth-child(4) { transition-delay: 0.02s; }
+
+#main-nav.collapsed .nav-item {
+  opacity: 0;
+  transform: translateX(-12px) scale(0.95);
+  pointer-events: none;
+  transition-delay: 0s;
+}
+
+#main-nav.collapsed { cursor: pointer; }
+
+#nav-menu-icon {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#main-nav.collapsed #nav-menu-icon {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease 0.15s, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s;
+}
+
+#main-nav.collapsed:hover {
+  transform: scale(1.08);
+  transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+              transform 0.2s ease,
+              box-shadow 0.3s ease;
+}
+
+#main-nav.collapsed:active { transform: scale(0.95); }
+
+/* ---------- Hero Section ---------- */
+
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-animate {
+  opacity: 0;
+  animation: heroFadeIn 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-word {
+  display: inline-block;
+  opacity: 0;
+  animation: heroFadeIn 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-marquee-mask {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+}
+
+@keyframes heroMarqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+#hero-marquee {
+  animation: heroMarqueeScroll 35s linear infinite;
+  will-change: transform;
+}
+
+.hero-marquee-card {
+  position: relative;
+  flex-shrink: 0;
+  aspect-ratio: 3 / 4;
+}
+
+.hero-marquee-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- About / Manifesto Carousel ---------- */
+
+.about-card {
+  position: absolute;
+  width: 11rem;
+  height: 17rem;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 640px) {
+  .about-card { width: 13rem; height: 20rem; }
+}
+
+@media (min-width: 768px) {
+  .about-card { width: 15rem; height: 26rem; }
+}
+
+.about-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Marquee Ticker ---------- */
+
+.marquee-track { width: 100%; overflow: hidden; }
+
+.marquee-scroll {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding-right: 0;
+}
+
+.marquee-content > span {
+  font-family: var(--font-serif);
+  font-size: clamp(0.65rem, 1.1vw, 0.8rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-cream);
+  white-space: nowrap;
+  padding: 0 0.6em;
+}
+
+.marquee-dot {
+  font-size: 0.5em !important;
+  color: var(--color-gold) !important;
+  letter-spacing: 0 !important;
+  padding: 0 0.3em !important;
+}
+
+@keyframes marqueeLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.marquee-left { animation: marqueeLeft 30s linear infinite; }
+.marquee-right { animation: marqueeRight 35s linear infinite; }
+
+/* ---------- Collection — Tabs ---------- */
+
+.cat-tab {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 0.45em 1em;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  color: var(--color-muted);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cat-tab:hover,
+.cat-tab.active {
+  background: var(--color-black);
+  color: var(--color-cream);
+  border-color: var(--color-black);
+}
+
+/* ---------- Collection — Product Cards ---------- */
+
+.product-card {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.product-card:hover { transform: translateY(-6px); }
+
+.color-swatch {
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 50%;
+  border: 1.5px solid rgba(17, 17, 17, 0.15);
+  cursor: pointer;
+  transition: border 0.2s ease, transform 0.2s ease;
+}
+
+.color-swatch:hover { transform: scale(1.15); }
+.color-swatch.active { border: 2px solid var(--color-black); }
+
+.size-pill {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  padding: 0.3em 0.6em;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  color: var(--color-muted);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.size-pill:hover,
+.size-pill.active {
+  background: var(--color-black);
+  color: var(--color-cream);
+  border-color: var(--color-black);
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
